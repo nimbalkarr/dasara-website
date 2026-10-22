@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#641522">
+    <meta name="description" content="Discover delicious food and beautiful ambience at DASARA, Festival on Every Plate, Baramati.">
+    <title>DASARA | Festival on Every Plate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="#home" class="brand">
+            <img src="logo.png" alt="DASARA logo">
+            <span class="brand-text">
+                <strong>DASARA</strong>
+                <small>FESTIVAL ON EVERY PLATE</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#ambience">Ambience</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact" class="nav-cta">Visit Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="eyebrow hero-eyebrow">GOOD FOOD. BEAUTIFUL MOMENTS.</span>
+            <h1>Festival on<br>Every <span>Plate.</span></h1>
+            <p>A celebration of flavours, warmth and togetherness. Come hungry, leave with beautiful memories.</p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-gold">Explore Our Menu</a>
+                <a href="#contact" class="btn btn-light-outline">Find Our Restaurant</a>
+            </div>
+
+            <div class="hero-note">
+                <span class="gold-line"></span>
+                <span>Made for food lovers and good company</span>
+            </div>
+        </div>
+        <a href="#story" class="scroll-cue">↓ &nbsp; Discover DASARA</a>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section" id="story">
+        <div class="container story-grid">
+            <div class="story-image-wrap">
+                <img src="interior1.png" alt="DASARA dining space" class="story-image" loading="lazy">
+                <div class="image-caption">
+                    <span class="caption-mark">D</span>
+                    <span>
+                        <strong>Welcome to DASARA</strong>
+                        <small>Where every meal is a celebration</small>
+                    </span>
+                </div>
+            </div>
+
+            <div class="story-copy">
+                <span class="eyebrow">A LITTLE ABOUT US</span>
+                <h2>More than a meal.<br><span>A feeling.</span></h2>
+                <p>At DASARA, food brings people together. From flavourful dishes to a thoughtfully designed dining space, every detail is part of the experience.</p>
+                <p>Whether you're meeting friends, enjoying a family meal or planning a special gathering, there's a place for you at our table.</p>
+                <a href="#ambience" class="text-link">Explore our space <span>→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+        <div class="container">
+            <div class="section-heading centered">
+                <span class="eyebrow">SOMETHING DELICIOUS AWAITS</span>
+                <h2>Explore Our <span>Menu</span></h2>
+                <p>From satisfying mains to tempting starters and sweet finishes, discover something to love.</p>
+            </div>
+
+            <div class="menu-filters" aria-label="Filter menu">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="starters" aria-pressed="false">Starters</button>
+                <button class="filter-btn" data-filter="mains" aria-pressed="false">Main Course</button>
+                <button class="filter-btn" data-filter="rice" aria-pressed="false">Rice & Biryani</button>
+                <button class="filter-btn" data-filter="desserts" aria-pressed="false">Desserts</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card" data-category="starters">
+                    <div class="menu-image">
+                        <img src="paneer.png" alt="Paneer starter" loading="lazy">
+                        <span class="menu-tag">Vegetarian</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-category">STARTERS</span>
+                        <h3>Paneer Special</h3>
+                        <p>A tempting paneer dish with rich spices and a delicious finish.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="starters">
+                    <div class="menu-image">
+                        <img src="img2.png" alt="Spicy Indian starter" loading="lazy">
+                        <span class="menu-tag">Chef's Pick</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-category">STARTERS</span>
+                        <h3>Spicy Starter</h3>
+                        <p>A colourful, flavour-packed dish for those who love a little heat.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="starters">
+                    <div class="menu-image">
+                        <img src="img3.png" alt="Tandoori chicken" loading="lazy">
+                        <span class="menu-tag">Non-Vegetarian</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-category">TANDOOR</span>
+                        <h3>Tandoori Favourite</h3>
+                        <p>A vibrant grilled speciality served with fresh accompaniments.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="mains">
+                    <div class="menu-image">
+                        <img src="img4.png" alt="Indian curry with naan" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-category">MAIN COURSE</span>
+                        <h3>Curry & Indian Breads</h3>
+                        <p>A comforting combination for a satisfying meal.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="rice">
+                    <div class="menu-image">
+                        <img src="img5.png" alt="Biryani" loading="lazy">
+                        <span class="menu-tag">A Favourite</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-category">RICE & BIRYANI</span>
+                        <h3>Biryani Special</h3>
+                        <p>Aromatic rice with herbs, spices and delicious accompaniments.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="desserts">
+                    <div class="menu-image">
+                        <img src="desert.png" alt="Caramel dessert" loading="lazy">
+                        <span class="menu-tag">Sweet Finish</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-category">DESSERTS</span>
+                        <h3>Caramel Delight</h3>
+                        <p>A smooth, sweet treat to round off your dining experience.</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AMBIENCE -->
+    <section class="section" id="ambience">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">YOUR PLACE TO UNWIND</span>
+                <h2>Step Into the <span>Experience</span></h2>
+                <p>Thoughtful details, warm lighting and inviting spaces make every visit feel special.</p>
+            </div>
+
+            <div class="ambience-grid">
+                <a href="interior1.png" class="ambience-item ambience-large lightbox-link">
+                    <img src="interior1.png" alt="Decorative ceiling and dining area" loading="lazy">
+                    <span class="photo-label">A beautiful setting</span>
+                </a>
+                <a href="interior2.png" class="ambience-item lightbox-link">
+                    <img src="interior2.png" alt="Restaurant dining tables" loading="lazy">
+                    <span class="photo-label">Gather around</span>
+                </a>
+                <a href="interior3.png" class="ambience-item lightbox-link">
+                    <img src="interior3.png" alt="Restaurant seating and greenery" loading="lazy">
+                    <span class="photo-label">Relax and enjoy</span>
+                </a>
+                <a href="interior4.png" class="ambience-item lightbox-link">
+                    <img src="interior4.png" alt="Warmly lit restaurant interior" loading="lazy">
+                    <span class="photo-label">Made for moments</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE BANNER -->
+    <section class="experience-banner">
+        <div class="experience-overlay"></div>
+        <div class="container experience-content">
+            <span class="eyebrow">GOOD FOOD, GREAT COMPANY</span>
+            <h2>Make room for<br><span>something memorable.</span></h2>
+            <p>Bring your favourite people. We'll help set the scene.</p>
+            <a href="#contact" class="btn btn-gold">Plan Your Visit</a>
+        </div>
+    </section>
+
+    <!-- FOOD GALLERY -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-heading centered">
+                <span class="eyebrow">A TASTE OF DASARA</span>
+                <h2>Good Food. <span>Good Moments.</span></h2>
+                <p>A glimpse of the dishes and details that make DASARA special.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="img.png" class="gallery-item gallery-tall lightbox-link">
+                    <img src="img.png" alt="Chef presenting food" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+                <a href="img2.png" class="gallery-item lightbox-link">
+                    <img src="img2.png" alt="Spicy Indian starter" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+                <a href="img3.png" class="gallery-item lightbox-link">
+                    <img src="img3.png" alt="Tandoori dish" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+                <a href="img4.png" class="gallery-item lightbox-link">
+                    <img src="img4.png" alt="Curry and naan" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+                <a href="img5.png" class="gallery-item lightbox-link">
+                    <img src="img5.png" alt="Biryani" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+                <a href="paneer.png" class="gallery-item lightbox-link">
+                    <img src="paneer.png" alt="Paneer dish" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+                <a href="desert.png" class="gallery-item lightbox-link">
+                    <img src="desert.png" alt="Caramel dessert" loading="lazy">
+                    <span class="gallery-zoom">View photo ↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-copy">
+                <span class="eyebrow">WE LOOK FORWARD TO WELCOMING YOU</span>
+                <h2>Come on in.<br><span>Your table awaits.</span></h2>
+                <p>Planning a meal with friends or a family get-together? Find our location and connect with DASARA before your visit.</p>
+
+                <div class="contact-detail">
+                    <span class="detail-icon">⌖</span>
+                    <div>
+                        <h3>Find Us</h3>
+                        <p>Motibagh, Indapur Road,<br>Next to Muktai Textiles,<br>Baramati, Maharashtra 413102</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span class="detail-icon">◎</span>
+                    <div>
+                        <h3>Follow Along</h3>
+                        <p>Discover more from DASARA on Instagram.</p>
+                        <a href="https://www.instagram.com/dasara.baramati/" target="_blank" rel="noopener noreferrer" class="text-link">@dasara.baramati →</a>
+                    </div>
+                </div>
+
+                <div class="contact-buttons">
+                    <a class="btn btn-burgundy" href="https://www.google.com/maps/search/?api=1&query=DASARA+Festival+on+Every+Plate+Motibagh+Baramati" target="_blank" rel="noopener noreferrer">Get Directions ↗</a>
+                    <a class="btn btn-outline-dark" href="https://www.instagram.com/dasara.baramati/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                </div>
+            </div>
+
+            <div class="map-card">
+                <div class="map-heading">
+                    <img src="logo.png" alt="DASARA logo" loading="lazy">
+                    <div>
+                        <strong>DASARA</strong>
+                        <span>Festival on Every Plate</span>
+                    </div>
+                </div>
+
+                <a class="map-visual" href="https://www.google.com/maps/search/?api=1&query=DASARA+Festival+on+Every+Plate+Motibagh+Baramati" target="_blank" rel="noopener noreferrer" aria-label="Open DASARA location in Google Maps">
+                    <span class="map-circle circle-one"></span>
+                    <span class="map-circle circle-two"></span>
+                    <span class="map-road road-one"></span>
+                    <span class="map-road road-two"></span>
+                    <span class="map-road road-three"></span>
+                    <span class="map-pin">⌖</span>
+                    <span class="map-label">DASARA · BARAMATI</span>
+                </a>
+
+                <div class="map-address">
+                    <div>
+                        <strong>Visit us in Baramati</strong>
+                        <p>Motibagh, Indapur Road, Maharashtra 413102</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=DASARA+Festival+on+Every+Plate+Motibagh+Baramati" target="_blank" rel="noopener noreferrer" aria-label="Open Google Maps">↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-main">
+        <a href="#home" class="brand footer-brand">
+            <img src="logo.png" alt="DASARA logo">
+            <span class="brand-text">
+                <strong>DASARA</strong>
+                <small>FESTIVAL ON EVERY PLATE</small>
+            </span>
+        </a>
+        <p>Good food. Warm moments. Beautiful memories.</p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© <span id="currentYear"></span> DASARA. All rights reserved.</p>
+            <p class="demo-note">Independent website concept · Pending restaurant approval</p>
+        </div>
+    </div>
+</footer>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <img src="" alt="Expanded restaurant photo" id="lightboxImage">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
